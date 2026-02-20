@@ -6,4 +6,6 @@ Built-in functions are implemented in `bruhlib.py`, so make sure it can be impor
 
 This interpreter does **NOT** implement syntax errors, so **beware of untrusted bruh():bruh() programs (Any Python code can be injected)**. Therefore, you have to confirm before executing a program, the original and translated code will be shown.
 
-There are also some examples which can be found on [the page on esolangs.org](https://esolangs.org/wiki/Bruh():bruh()) as well. There's also an example `inject.br` which demonstrates how easy it is to inject Python code in this interpreter 
+There are also some examples which can be found on [the page on esolangs.org](https://esolangs.org/wiki/Bruh():bruh()) as well. There's also an example `inject.br` which demonstrates how easy it is to inject Python code in this interpreter.
+
+The usage of this interpreter is: `python main.py <file>`

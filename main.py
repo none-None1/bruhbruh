@@ -23,11 +23,12 @@ def bruh2py(code):
     if 'bruh' in func_id_dicts:
         res+=f'funcs[{func_id_dicts["bruh"]}]()'
     return res
-oc=open(sys.argv[1]).read()
-print('Original code:')
-print(oc)
-c=bruh2py(oc)
-print('Translated code')
-print(c)
-input("Press enter to confirm run: ")
-exec(c)
+if __name__==__main__:
+    oc = open(sys.argv[1]).read()
+    print('Original code:')
+    print(oc)
+    c = bruh2py(oc)
+    print('Translated code')
+    print(c)
+    input("Press enter to confirm run: ")
+    exec(c)
