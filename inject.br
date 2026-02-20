@@ -1,1 +1,1 @@
-bruh():__import__("tkinter.messagebox",fromlist=['']).showinfo("Code","Injected")
+bruh():__import__("tkinter.messagebox",fromlist=['']).showinfo("Code","Injected") ; Will display a message box

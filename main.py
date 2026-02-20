@@ -3,6 +3,7 @@ import re,sys
 def bruh2py(code):
     lines=code.strip().split('\n')
     lines=[i.replace(' ','').replace('\t','')for i in lines]
+    lines=[(i.split(';')[0] if (';' in i) else i) for i in lines]
     res='from bruhlib import *\nimport sys\nsys.setrecursionlimit(2147483647)\n'
     func_id_dicts={}
     for i in 'in inc out outc add sub mul div mod 0 1 2 3 4 5 6 7 8 9 a b c d e f if'.split():
@@ -23,7 +24,7 @@ def bruh2py(code):
     if 'bruh' in func_id_dicts:
         res+=f'funcs[{func_id_dicts["bruh"]}]()'
     return res
-if __name__==__main__:
+if __name__=='__main__':
     oc = open(sys.argv[1]).read()
     print('Original code:')
     print(oc)
