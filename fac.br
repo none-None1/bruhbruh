@@ -1,0 +1,3 @@
+one(x):1()
+fac(x):mul(if(sub(x,1()),fac,one,sub(x,1())),x)
+bruh():out(fac(in()))

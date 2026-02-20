@@ -1,0 +1,3 @@
+null(x,y,n):sub(y,x)
+fib(x,y,n):if(n,fib,null,y,add(x,y),sub(n,1()))
+bruh():out(fib(0(),1(),in()))
